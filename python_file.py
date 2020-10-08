@@ -13,9 +13,10 @@ class DistanceFuncs:
 	@staticmethod
 	def jaccard_distance(point_a: List[float], point_b: List[float]):
 		raise NotImplementedError()
+
 def main():
 	test = DistanceFuncs()
-	test.calc_distance([2,3],[10,10])
-	print("The distance is : ",test.euclidean())
-if __name__ ==" main ":
-main()
+	
+	print("The distance is : ",test.calc_distance([2,3],[10,10],test.euclidean))
+if __name__ =="__main__":
+	main()
